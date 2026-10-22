@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * The rupee sign (U+20B9) lives in the web fonts' latin-ext subset (~100 KB). Mapping just that one
+ * character to a local system font means the browser never downloads those files.
+ */
+@font-face {
+  font-family: "Rupee";
+  src: local("Segoe UI"), local("Arial"), local("Roboto"), local("Noto Sans"), local("Helvetica Neue"), local("Arial Unicode MS");
+  unicode-range: U+20B9;
+  font-display: swap;
+}
+
+/* Tokens mirror config/client.json -> theme (RGB triplets for alpha support). */
+:root {
+  --primary: 79 70 229;
+  --primary-light: 238 242 255;
+  --accent: 245 158 11;
+  --hot: 239 68 68;
+  --warm: 245 158 11;
+  --cold: 100 116 139;
+  --ink: 15 23 42;
+  --muted: 100 116 139;
+  --surface: 255 255 255;
+  --background: 248 250 252;
+  --line: 226 232 240;
+  /* hero sky */
+  --sky-c: #c7d2fe;
+  --sky-b: #fde1b8;
+  --sky-a: #fff4e0;
+  --sky-glow-1: #fdba74;
+  --sky-glow-2: #fef3c7;
+}
+
+.dark {
+  --primary: 129 140 248;
+  --primary-light: 30 27 75;
+  --accent: 251 191 36;
+  --hot: 248 113 113;
+  --warm: 251 191 36;
+  --cold: 148 163 184;
+  --ink: 241 245 249;
+  --muted: 148 163 184;
+  --surface: 15 23 42;
+  --background: 2 6 23;
+  --line: 51 65 85;
+  --sky-c: #0b1033;
+  --sky-b: #3b2a6b;
+  --sky-a: #7a3f5a;
+  --sky-glow-1: #4338ca;
+  --sky-glow-2: #9a3b5f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background font-sans text-ink antialiased;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-tight;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Skip rendering work for below-the-fold landing sections until they are near the viewport. */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 760px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

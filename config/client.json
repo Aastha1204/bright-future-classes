@@ -1,0 +1,223 @@
+{
+  "business": {
+    "name": "Bright Future Classes",
+    "tagline": "Learn with clarity. Grow with confidence.",
+    "founded": 2012,
+    "phone": "+91 98XXX XXXXX",
+    "phone_note": "demo number",
+    "email": "hello@brightfuture.demo",
+    "whatsapp": "+91 98XXX XXXXX (demo)",
+    "hours": {
+      "mon_sat": "Mon–Sat 8 am–9 pm",
+      "sun": "Sun 10 am–2 pm"
+    },
+    "disclaimer": "Bright Future Classes is a fictional business created for demonstration."
+  },
+  "theme": {
+    "primary": "#4F46E5",
+    "primaryLight": "#EEF2FF",
+    "accent": "#F59E0B",
+    "hot": "#EF4444",
+    "warm": "#F59E0B",
+    "cold": "#64748B",
+    "ink": "#0F172A",
+    "muted": "#64748B",
+    "surface": "#FFFFFF",
+    "background": "#F8FAFC",
+    "logo": "/illustrations/logo.svg"
+  },
+  "branches": [
+    {
+      "id": "andheri",
+      "name": "Andheri West",
+      "address": "2nd Floor, Sunrise Arcade, near Lokhandwala Complex, Andheri West, Mumbai",
+      "landmark": "near Lokhandwala",
+      "timings": "Mon–Sat 8 am–9 pm, Sun 10 am–2 pm",
+      "nearest_station": "Andheri (Western Line)",
+      "seats_per_batch": 30
+    },
+    {
+      "id": "dadar",
+      "name": "Dadar West",
+      "address": "1st Floor, Harbour View Chambers, near Dadar Station, Dadar West, Mumbai",
+      "landmark": "near Dadar station",
+      "timings": "Mon–Sat 8 am–9 pm, Sun 10 am–2 pm",
+      "nearest_station": "Dadar (Western & Central Lines)",
+      "seats_per_batch": 35
+    },
+    {
+      "id": "thane",
+      "name": "Thane West",
+      "address": "3rd Floor, Lakeside Plaza, Ghodbunder Road, Thane West",
+      "landmark": "Ghodbunder Road",
+      "timings": "Mon–Sat 8 am–9 pm, Sun 10 am–2 pm",
+      "nearest_station": "Thane (Central Line)",
+      "seats_per_batch": 30
+    },
+    {
+      "id": "borivali",
+      "name": "Borivali West",
+      "address": "Ground Floor, Gulmohar Square, near Borivali Station, Borivali West, Mumbai",
+      "landmark": "near Borivali station",
+      "timings": "Mon–Sat 8 am–9 pm, Sun 10 am–2 pm",
+      "nearest_station": "Borivali (Western Line)",
+      "seats_per_batch": 28
+    }
+  ],
+  "courses": [
+    {
+      "id": "class8",
+      "name": "Class 8 Foundation",
+      "boards": ["SSC", "CBSE", "ICSE"],
+      "duration": "10 months (June–March)",
+      "subjects": ["Maths", "Science"],
+      "weekly_hours": 8,
+      "batch_options": ["Morning", "Afternoon", "Evening", "Weekend"],
+      "annual_fee": 38000,
+      "installments": 3,
+      "sibling_discount_pct": 5,
+      "early_bird_discount_pct": 10,
+      "early_bird_before": "30 April"
+    },
+    {
+      "id": "class9",
+      "name": "Class 9 (SSC / CBSE / ICSE)",
+      "boards": ["SSC", "CBSE", "ICSE"],
+      "duration": "10 months (June–March)",
+      "subjects": ["Maths", "Science", "Social Science", "English"],
+      "weekly_hours": 12,
+      "batch_options": ["Morning", "Afternoon", "Evening", "Weekend"],
+      "annual_fee": 52000,
+      "installments": 3,
+      "sibling_discount_pct": 5,
+      "early_bird_discount_pct": 10,
+      "early_bird_before": "30 April"
+    },
+    {
+      "id": "class10",
+      "name": "Class 10 Board Prep (SSC / CBSE / ICSE)",
+      "boards": ["SSC", "CBSE", "ICSE"],
+      "duration": "10 months (June–March)",
+      "subjects": ["Maths", "Science", "Social Science", "English"],
+      "weekly_hours": 14,
+      "batch_options": ["Morning", "Afternoon", "Evening", "Weekend"],
+      "annual_fee": 58000,
+      "installments": 3,
+      "sibling_discount_pct": 5,
+      "early_bird_discount_pct": 10,
+      "early_bird_before": "30 April"
+    },
+    {
+      "id": "jee_foundation",
+      "name": "JEE Foundation (Class 9–10)",
+      "boards": ["SSC", "CBSE", "ICSE"],
+      "duration": "2 years",
+      "subjects": ["Maths", "Physics", "Chemistry"],
+      "weekly_hours": 10,
+      "batch_options": ["Evening", "Weekend"],
+      "annual_fee": 68000,
+      "installments": 3,
+      "sibling_discount_pct": 5,
+      "early_bird_discount_pct": 10,
+      "early_bird_before": "30 April"
+    },
+    {
+      "id": "neet_foundation",
+      "name": "NEET Foundation (Class 9–10)",
+      "boards": ["SSC", "CBSE", "ICSE"],
+      "duration": "2 years",
+      "subjects": ["Biology", "Physics", "Chemistry"],
+      "weekly_hours": 10,
+      "batch_options": ["Evening", "Weekend"],
+      "annual_fee": 72000,
+      "installments": 3,
+      "sibling_discount_pct": 5,
+      "early_bird_discount_pct": 10,
+      "early_bird_before": "30 April"
+    }
+  ],
+  "batches": [
+    { "name": "Morning", "time": "7–9 am", "days": "Mon–Sat", "seats_left": { "andheri": 8, "dadar": 12, "thane": 6, "borivali": 9 } },
+    { "name": "Afternoon", "time": "3–5 pm", "days": "Mon–Sat", "seats_left": { "andheri": 10, "dadar": 7, "thane": 11, "borivali": 5 } },
+    { "name": "Evening", "time": "6–8 pm", "days": "Mon–Sat", "seats_left": { "andheri": 4, "dadar": 6, "thane": 9, "borivali": 7 } },
+    { "name": "Weekend", "time": "Sat–Sun 10 am–1 pm", "days": "Sat–Sun", "seats_left": { "andheri": 12, "dadar": 14, "thane": 10, "borivali": 8 } }
+  ],
+  "demo_class": {
+    "free": true,
+    "duration_minutes": 60,
+    "slot_rules": [
+      { "weekday": 2, "time": "17:00", "label": "Tue 5 pm" },
+      { "weekday": 4, "time": "17:00", "label": "Thu 5 pm" },
+      { "weekday": 6, "time": "17:00", "label": "Sat 5 pm" },
+      { "weekday": 0, "time": "11:00", "label": "Sun 11 am" }
+    ],
+    "days_ahead": 7
+  },
+  "faculty": [
+    { "id": "f1", "initials": "AK", "name": "Mr. A. Kulkarni", "subject": "Maths", "experience_years": 12, "bio": "Breaks algebra and geometry into simple steps with lots of practice." },
+    { "id": "f2", "initials": "SD", "name": "Ms. S. Deshmukh", "subject": "Science", "experience_years": 9, "bio": "Loves experiments and concept maps; makes Science easy to remember." },
+    { "id": "f3", "initials": "RN", "name": "Mr. R. Nair", "subject": "Physics", "experience_years": 14, "bio": "Focuses on problem solving for JEE Foundation students." },
+    { "id": "f4", "initials": "PM", "name": "Ms. P. Mehta", "subject": "Chemistry", "experience_years": 10, "bio": "Known for clear reaction charts and revision tricks." },
+    { "id": "f5", "initials": "VJ", "name": "Dr. V. Joshi", "subject": "Biology", "experience_years": 11, "bio": "Guides NEET Foundation students with diagram-based learning." },
+    { "id": "f6", "initials": "NS", "name": "Ms. N. Shaikh", "subject": "English & Social Science", "experience_years": 8, "bio": "Builds writing skills and exam answer-writing technique." }
+  ],
+  "policies": {
+    "refund": "Fees are refundable within 7 days of joining if you are not satisfied, after deducting a registration fee. After 7 days, fees are non-refundable.",
+    "study_material": "Printed study material and practice sheets are included in the fee.",
+    "test_series": "A chapter test every two weeks and three mock board exams a year.",
+    "parent_teacher_meeting": "Parent-teacher meeting once a month.",
+    "attendance_sms": "Parents receive an attendance SMS for every class.",
+    "doubt_sessions": "Free doubt-clearing sessions twice a week.",
+    "transport": "We do not provide transport.",
+    "parking": "Two-wheeler parking is available at Andheri and Borivali; limited at Dadar and Thane.",
+    "online": "Classes are offline at the branches; recorded revision videos are shared for missed classes.",
+    "batch_size": "Maximum 28–35 students per batch depending on the branch."
+  },
+  "results_policy": "We share past results only at the centre. We never guarantee marks, ranks or selection.",
+  "faqs": [
+    { "q": "What are the fees for Class 8 Foundation?", "a": "Class 8 Foundation is ₹38,000 per year." },
+    { "q": "What are the fees for Class 9?", "a": "Class 9 (SSC / CBSE / ICSE) is ₹52,000 per year." },
+    { "q": "What are the fees for Class 10 Board Prep?", "a": "Class 10 Board Prep is ₹58,000 per year." },
+    { "q": "What are the fees for JEE Foundation?", "a": "JEE Foundation (Class 9–10) is ₹68,000 per year." },
+    { "q": "What are the fees for NEET Foundation?", "a": "NEET Foundation (Class 9–10) is ₹72,000 per year." },
+    { "q": "Can I pay in instalments?", "a": "Yes, fees can be paid in 3 instalments." },
+    { "q": "Is there any discount?", "a": "5% sibling discount, and 10% early-bird discount if you join before 30 April." },
+    { "q": "What are the batch timings?", "a": "Morning 7–9 am, Afternoon 3–5 pm, Evening 6–8 pm (Mon–Sat) and Weekend Sat–Sun 10 am–1 pm." },
+    { "q": "Where are your branches?", "a": "Andheri West (near Lokhandwala), Dadar West (near station), Thane West (Ghodbunder Road) and Borivali West (near station)." },
+    { "q": "Is there a free demo class?", "a": "Yes, a free 60-minute demo class. Slots: Tue, Thu and Sat 5 pm, Sun 11 am." },
+    { "q": "What is the batch size?", "a": "Maximum 28–35 students per batch depending on the branch." },
+    { "q": "Do you have online classes?", "a": "Classes are offline at the branches; recorded revision videos are shared for missed classes." },
+    { "q": "Is study material included?", "a": "Yes, printed study material and practice sheets are included in the fee." },
+    { "q": "Do you have doubt sessions?", "a": "Yes, free doubt-clearing sessions twice a week." },
+    { "q": "Do you conduct tests?", "a": "A chapter test every two weeks and three mock board exams a year." },
+    { "q": "Do you have a scholarship test?", "a": "Please ask our counsellor about scholarship tests; I'll ask them to confirm the details." },
+    { "q": "Can I switch batches?", "a": "Batch switching depends on seat availability; our counsellor will confirm for your branch." },
+    { "q": "What is your refund policy?", "a": "Fees are refundable within 7 days of joining if you are not satisfied, after deducting a registration fee. After 7 days, fees are non-refundable." },
+    { "q": "Do you provide transport?", "a": "No, we do not provide transport." },
+    { "q": "Is parking available?", "a": "Two-wheeler parking is available at Andheri and Borivali; limited at Dadar and Thane." },
+    { "q": "What are your working hours?", "a": "Mon–Sat 8 am–9 pm, Sun 10 am–2 pm." }
+  ],
+  "handover": {
+    "counsellor_name": "Ms. Kavita (Counsellor)",
+    "templates": {
+      "hot": "Hi {parent}, this is {counsellor} from Bright Future Classes. Confirming the demo class for {student} ({class}) at {branch} on {slot}. See you there!",
+      "warm": "Hi {parent}, thanks for your interest in {class} at Bright Future Classes. Sharing the fee and batch details here. Happy to answer any questions.",
+      "cold": "Hi, thanks for contacting Bright Future Classes. Reach us anytime for course details."
+    },
+    "unknown_reply": "I'll ask our counsellor to confirm that for you."
+  },
+  "scope": {
+    "allowed_topics": [
+      "courses and subjects",
+      "fees, instalments and discounts",
+      "batches and timings",
+      "branches and locations",
+      "demo class",
+      "faculty",
+      "study material, tests and doubt sessions",
+      "admission process and policies"
+    ],
+    "refusal": "I can only help with Bright Future Classes admissions — courses, fees, batches, branches and demo classes. Is there something about those I can help with?"
+  },
+  "languages": ["en", "hinglish"]
+}

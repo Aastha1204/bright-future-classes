@@ -1,0 +1,153 @@
+{
+  "A": {
+    "title": "Demo A — HOT lead",
+    "badge": "HOT",
+    "summary": "Hinglish parent, Class 9 CBSE, Andheri. Asks fees and instalments, picks the Thu 5 pm demo and shares a number.",
+    "turns": [
+      {
+        "user": "Namaste, Class 9 CBSE ke liye classes chahiye. Andheri mein branch hai?",
+        "bot": {
+          "reply": "Namaste! Haan, Andheri West mein branch hai, Lokhandwala ke paas. Student ka naam kya hai?",
+          "language": "hinglish",
+          "extracted_fields": { "class_or_exam": "Class 9", "board": "CBSE", "preferred_branch": "Andheri West" },
+          "intents": [],
+          "quick_replies": ["Riya", "Fees?", "Batch timings"]
+        }
+      },
+      {
+        "user": "Riya naam hai. Fees kitni hai?",
+        "bot": {
+          "reply": "Riya ke liye Class 9 (SSC / CBSE / ICSE) ki fees ₹52,000 per year hai. Kaunsa batch suit karega?",
+          "language": "hinglish",
+          "extracted_fields": { "student_name": "Riya" },
+          "intents": ["asks_fees"],
+          "quick_replies": ["Evening batch", "Morning batch", "Instalment?"]
+        }
+      },
+      {
+        "user": "Installment mein de sakte hain?",
+        "bot": {
+          "reply": "Ji haan, fees 3 instalments mein de sakte hain. Kaunsa batch theek rahega — Morning, Afternoon ya Evening?",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["asks_fees"],
+          "quick_replies": ["Evening", "Morning", "Afternoon"]
+        }
+      },
+      {
+        "user": "Evening batch theek rahega. Demo class kab hai?",
+        "bot": {
+          "reply": "Evening batch 6–8 pm hota hai. Free 60-minute demo class ke slots: Tue 5 pm, Thu 5 pm, Sat 5 pm ya Sun 11 am. Kaunsa slot chalega?",
+          "language": "hinglish",
+          "extracted_fields": { "preferred_batch": "Evening" },
+          "intents": ["asks_demo_class"],
+          "quick_replies": ["Thu 5 pm", "Sat 5 pm", "Sun 11 am"]
+        }
+      },
+      {
+        "user": "Thu 5 pm perfect. Mera number 9800012345 hai.",
+        "bot": {
+          "reply": "Dhanyavaad! Thu 5 pm ka demo Andheri West mein note kar liya. Hamari counsellor aapko confirm karne ke liye call karengi.",
+          "language": "hinglish",
+          "extracted_fields": { "parent_phone": "9800012345" },
+          "intents": ["asks_demo_class"],
+          "quick_replies": ["Fees?", "Branch address"]
+        }
+      }
+    ]
+  },
+  "B": {
+    "title": "Demo B — WARM lead",
+    "badge": "WARM",
+    "summary": "Student asks JEE Foundation timings at Thane and the weekend batch, then hesitates on sharing a number. The bot asks once and doesn't push.",
+    "turns": [
+      {
+        "user": "Hi, JEE Foundation ke timings kya hain? Thane mein.",
+        "bot": {
+          "reply": "Hi! JEE Foundation Evening aur Weekend batch mein hota hai. Thane West mein Ghodbunder Road par branch hai. Aap kis class mein ho?",
+          "language": "hinglish",
+          "extracted_fields": { "class_or_exam": "JEE Foundation", "preferred_branch": "Thane West" },
+          "intents": ["asks_timings"],
+          "quick_replies": ["Class 9", "Class 10"]
+        }
+      },
+      {
+        "user": "Class 9. Weekend batch hai kya?",
+        "bot": {
+          "reply": "Haan, Weekend batch Sat–Sun 10 am–1 pm hota hai aur Thane West mein seats available hain. Fees ke baare mein bataun?",
+          "language": "hinglish",
+          "extracted_fields": { "preferred_batch": "Weekend" },
+          "intents": ["asks_timings"],
+          "quick_replies": ["Fees?", "Demo class"]
+        }
+      },
+      {
+        "user": "Haan, fees kitni hogi?",
+        "bot": {
+          "reply": "JEE Foundation (Class 9–10) ki fees ₹68,000 per year hai, 3 instalments mein. Student ka naam kya hai?",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["asks_fees"],
+          "quick_replies": ["Kabir", "Discount?"]
+        }
+      },
+      {
+        "user": "Mera naam Kabir hai. Budget thoda tight hai, sochna padega.",
+        "bot": {
+          "reply": "Samajh sakti hoon, Kabir! 5% sibling discount hai, aur 30 April se pehle join karne par 10% early-bird discount. Free demo class mein aana chahoge? Parent ka number share karenge?",
+          "language": "hinglish",
+          "extracted_fields": { "student_name": "Kabir", "budget_comfort": "Budget-conscious" },
+          "intents": [],
+          "quick_replies": ["Abhi nahi", "Demo class"]
+        }
+      },
+      {
+        "user": "Abhi nahi, pehle ghar par poochna hai. Is hafte centre aa sakta hoon.",
+        "bot": {
+          "reply": "Bilkul theek hai, koi pressure nahi! Jab suit kare centre aaiye aur faculty se milke decide kijiye.",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["asks_visit"],
+          "quick_replies": ["Branch address", "Timings"]
+        }
+      }
+    ]
+  },
+  "C": {
+    "title": "Demo C — COLD lead",
+    "badge": "COLD",
+    "summary": "Asks another school's fees, then an off-topic question. The bot politely refuses the scope and closes warmly.",
+    "turns": [
+      {
+        "user": "Hi, doosre school ki fees kitni hai?",
+        "bot": {
+          "reply": "I can only help with Bright Future Classes admissions — courses, fees, batches, branches and demo classes. Is there something about those I can help with?",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["off_topic"],
+          "quick_replies": ["Courses", "Fees?", "Demo class"]
+        }
+      },
+      {
+        "user": "Cricket match ka score batao",
+        "bot": {
+          "reply": "I can only help with Bright Future Classes admissions — courses, fees, batches, branches and demo classes. Is there something about those I can help with?",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["off_topic"],
+          "quick_replies": ["Courses", "Fees?"]
+        }
+      },
+      {
+        "user": "Theek hai, bye.",
+        "bot": {
+          "reply": "Koi baat nahi! Jab bhi admissions ke baare mein jaanna ho, hum yahin hain.",
+          "language": "hinglish",
+          "extracted_fields": {},
+          "intents": ["off_topic"],
+          "quick_replies": []
+        }
+      }
+    ]
+  }
+}
